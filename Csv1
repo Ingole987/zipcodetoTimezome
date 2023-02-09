@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+
+namespace TimeZoneLookup
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string zipCode = "10001";
+
+            Dictionary<string, string> timeZones = new Dictionary<string, string>();
+
+            using (StreamReader reader = new StreamReader("zip_codes_timezones.csv"))
+            {
+                while (!reader.EndOfStream)
+                {
+                    string line = reader.ReadLine();
+                    string[] values = line.Split(',');
+                    timeZones[values[0]] = values[1];
+                }
+            }
+
+            if (timeZones.ContainsKey(zipCode))
+            {
+                Console.WriteLine("The time zone for zip code " + zipCode + " is " + timeZones[zipCode]);
+            }
+            else
+            {
+                Console.WriteLine("No time zone found for zip code " + zipCode);
+            }
+
+            Console.ReadLine();
+        }
+    }
+}
