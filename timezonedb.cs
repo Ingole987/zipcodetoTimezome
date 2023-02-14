@@ -49,3 +49,15 @@ namespace ConsoleApp1
     }
 }
 
+static string GetResponseString(HttpListenerRequest request)
+{
+    List<string> infoList = new List<string>();
+    infoList.Add($"Request URL: {request.Url}");
+    infoList.Add($"Request Method: {request.HttpMethod}");
+    infoList.Add($"Request Headers: {request.Headers}");
+    infoList.Add($"Request Content Type: {request.ContentType}");
+
+    string responseString = string.Join(Environment.NewLine, infoList);
+    return responseString;
+}
+
