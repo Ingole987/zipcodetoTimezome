@@ -47,3 +47,28 @@ public static List<EmailModel> DataIngetion()
                 }
 
             }
+
+
+
+
+
+
+
+
+emailModel.message = ("<!DOCTYPE html><html>" +
+    "<table width=\"1000\" border=\"1\" cellspacing=\"0\" cellpadding=\"0\" style=\"border:1px solid #ccc;\">" +
+    "<tr align=\"center\">" +
+    "<th>Client Name</th>" +
+    "<th>Client Source</th>" +
+    "<th>Start Date</th>" +
+    "<th>End Date</th>" +
+    "</tr>" +
+    "<tr align=\"center\">" +
+    $"<td>{emailModel.ClientName}</td>" +
+    $"<td>{emailModel.ClientSource}</td>" +
+    $"<td>{emailModel.StartDate}</td>" +
+    $"<td>{emailModel.EndDate}</td>" +
+    "</tr>" +
+    "</table></html>");
+
+
