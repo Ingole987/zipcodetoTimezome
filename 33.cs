@@ -71,4 +71,23 @@ emailModel.message = ("<!DOCTYPE html><html>" +
     "</tr>" +
     "</table></html>");
 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        Stats(327556_252053_75503_72482_0_3021_0_252053_0_0_0)_bd45f0a3-5fac-4f06-8f10-15835987f9db_Ingestion 
+                
+        Stats(TotalRecords_TotalDiscarded_TotalRecordsForIngestion_Ingested_IngestionFailed_IngestionPending_AudioDurationDiscard_FilterDiscard_InvalidClientCaptureDate_InvalidClientID_InvalidOutputAudioFileName)        
 
